@@ -9,7 +9,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 @st.cache_resource
 def load_model():
-    return whisper.load_model("medium")  
+    return whisper.load_model("base")  
 
 model = load_model()
 
