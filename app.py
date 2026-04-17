@@ -6,7 +6,7 @@ from openai import OpenAI
 import tempfile
 from google.colab import userdata
 
-client = OpenAI(api_key=userdata.get('OPENAI_API_KEY'))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 @st.cache_resource
 def load_model():
